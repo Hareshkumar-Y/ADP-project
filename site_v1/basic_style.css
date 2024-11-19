@@ -1,22 +1,48 @@
 body{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     margin: 0;
     padding: 0;
 }
 
 header{
-    height: 250px;
-    background-color: beige;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background: url(banner_bg.jpg);
+    animation: gradient 120s ease infinite;
+}
+
+section{
+    margin-top: 70px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+header>h2{
+    margin: 0;
+    position: relative;
+    justify-self: center;
+    cursor: default;
 }
 
 .top_nav>h1{
     display: flex;
     margin: 0;
     margin-left: 10px;
+    margin-top: 5px;
     padding: 0;
     color: whitesmoke;
+    cursor: default;
 }
 
 .top_nav{
@@ -24,9 +50,9 @@ header{
     left: 0;
     margin: 0;
     padding: 0;
-    height: 33px;
+    height: 40px;
     display: flex;
-    background-color: rgb(53, 56, 102);
+    background-color: teal;
     justify-content: space-between;
 }
 
@@ -43,7 +69,8 @@ header{
 }
 
 .top_nav > ul > li{
-    margin-left: 10px;
+    position: relative;
+    margin-left: 15px;
     padding: 2px;
     border: 2px solid burlywood;
     border-radius: 30px;
@@ -68,4 +95,48 @@ a:hover{
     background-color: burlywood;
     border-radius: 30px;
     transition: .75s;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    min-height: 500px;
+    font-family: cursive;
+    letter-spacing: 50px;
+    font-size: 60px;
+    transition: ease-in-out 0.5s;
+}
+
+#home>h1{
+    transition: ease-in-out 0.5s;
+}
+
+#home:hover, #home>h1:hover{
+    letter-spacing: 1px;
+    margin: 0;
+    background-color: grey;
+    transition: ease-in-out 0.5s;
+}
+
+#products{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    min-height: 500px;
+    font-family: cursive;
+    letter-spacing: 50px;
+    font-size: 60px;
+    transition: ease-in-out 0.5s;
+}
+
+#products>h1{
+    transition: ease-in-out 0.5s;
+}
+
+#products:hover, #products>h1:hover{
+    letter-spacing: 1px;
+    margin: 0;
+    background-color: bisque;
+    transition: ease-in-out 0.5s;
 }
