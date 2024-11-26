@@ -12,9 +12,9 @@ header{
     animation: gradient 120s ease infinite;
 }
 
-section{
+/* section{
     margin-top: 70px;
-}
+} */
 
 @keyframes gradient {
     0% {
